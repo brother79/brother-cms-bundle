@@ -1,0 +1,3 @@
+brother_cms_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: BrotherCMSBundle:Default:index }
