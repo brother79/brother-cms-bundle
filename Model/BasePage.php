@@ -14,6 +14,8 @@ use Sonata\PageBundle\Entity\BasePage as SonataBasePage;
 
 abstract class BasePage extends SonataBasePage {
 
+    protected $published = false;
+
     /**
      *
      */
@@ -30,6 +32,22 @@ abstract class BasePage extends SonataBasePage {
     public function hasChildren()
     {
         return count($this->children);
+    }
+
+    /**
+     * @return boolean
+     */
+    public function isPublished()
+    {
+        return $this->published;
+    }
+
+    /**
+     * @param boolean $published
+     */
+    public function setPublished($published)
+    {
+        $this->published = $published;
     }
 
     private function toArray()

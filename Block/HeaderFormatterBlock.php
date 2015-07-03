@@ -6,7 +6,7 @@
  * Time: 13:40
  */
 
-namespace MainBundle\Block;
+namespace Brother\CMSBundle\Block;
 
 
 use Brother\CommonBundle\AppDebug;

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace MainBundle\Block;
+namespace Brother\CMSBundle\Block;
 
 use Brother\CommonBundle\AppDebug;
 use Sonata\BlockBundle\Block\BlockContextInterface;

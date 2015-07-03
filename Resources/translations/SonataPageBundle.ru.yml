@@ -9,6 +9,7 @@ Facebook Social Plugin - Send button:  Фэйсбук - кнопка отпра�
 Facebook Social Plugin - Share button: Фэйсбук - кнопка поделиться
 Feature Media:                         Медиа объект настраиваемый
 Filters Menu:                          Меню фильтров
+Header Rich Text Area:                 Форматированный текст с заголовком
 Gallery:                               Галерея
 Gallery id:                            Галерея
 Media:                                 Медиа объект
@@ -17,6 +18,7 @@ Menu:                                  Меню
 Newsletter Block (fake):               Подписка на новости
 Options:                               Опции
 pages.compose_label:                   Композитор
+page.compose_blocks_label:             Блоков
 pages.edited_label:                    Изменена
 Pinterest - Pin button:
 Products Variations choice:            Выбор варианта комплектации товара
