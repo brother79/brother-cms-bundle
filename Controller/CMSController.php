@@ -19,7 +19,7 @@ class CMSController extends PageController
         $page = $pageManager->getMainPage($manager->getCurrentPage()->getSite(), '/');
 
         return $this->render('BrotherCMSBundle:CMS:_menu.html.twig', array(
-            'pages' => $page->getChildren()
+            'pages' => $page ? $page->getChildren() : array()
         ));
     }
 }

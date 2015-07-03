@@ -3,6 +3,7 @@ Categories Menu:                       Меню категорий
 Children Page (core):                  Дочерняя страница
 Edited Pages:                          Редактированные страницы
 Email - Share button:                  Кнопка - отправить письмо
+form.label_published:                  Опубликовано
 Facebook Social Plugin - Like box:     Фэйсбук - блок лайкнуть
 Facebook Social Plugin - Like button:  Фэйсбук - кнопка лайкнуть
 Facebook Social Plugin - Send button:  Фэйсбук - кнопка отправить
@@ -12,6 +13,7 @@ Filters Menu:                          Меню фильтров
 Header Rich Text Area:                 Форматированный текст с заголовком
 Gallery:                               Галерея
 Gallery id:                            Галерея
+list.label_published:                  Опубликовано
 Media:                                 Медиа объект
 Media id:                              Медиа объект
 Menu:                                  Меню

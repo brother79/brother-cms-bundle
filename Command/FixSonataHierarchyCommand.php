@@ -1,7 +1,6 @@
 <?php
 namespace Brother\CMSBundle\Command;
 
-use Brother\CommonBundle\AppDebug;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -13,7 +12,7 @@ class FixSonataHierarchyCommand extends ContainerAwareCommand
     protected function configure()
     {
         $this
-            ->setName('brother-common:fix-sonata-hierarchy')
+            ->setName('brother-cms:fix-sonata-hierarchy')
             ->setDescription('Иерархия страниц сонаты');
     }
 
@@ -55,7 +54,7 @@ class FixSonataHierarchyCommand extends ContainerAwareCommand
                         $parent = $p;
                     }
                 }
-                if ($parent && $parent->getUrl() != '/' && $parent->getParent()->getId() != $page->getId()) {
+                if ($parent && $parent->getUrl() != '/' && ($parent->getParent() == null || $parent->getParent()->getId() != $page->getId())) {
                     $output->writeln($parent->getUrl() . '(' . $parent->getName() . ') -> ' . $page->getUrl() . '(' . $page->getName() . ')');
                     $page->setParent($parent);
                     $em->persist($page);
