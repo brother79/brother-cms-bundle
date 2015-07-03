@@ -3,7 +3,7 @@
         <a href="{{ path(page) }}">{{ page.menuTitle }}</a>
         {% if page.hasChildren %}
             <ul>
-                {% include "BrotherCommonBundle:CMS:_menu_items.html.twig" with { pages: page.children } %}
+                {% include "BrotherCMSBundle:CMS:_menu_items.html.twig" with { pages: page.children } %}
             </ul>
         {% endif %}
     </li>

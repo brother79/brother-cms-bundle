@@ -6,7 +6,7 @@
  * Time: 10:36
  */
 
-namespace Brother\CommonBundle\Site;
+namespace Brother\CMSBundle\Model;
 
 use Brother\CommonBundle\AppDebug;
 use Brother\CommonBundle\Route\AppRouteAction;

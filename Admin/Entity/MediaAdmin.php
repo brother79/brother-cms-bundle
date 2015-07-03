@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Brother\CommonBundle\Admin\Entity;
+namespace Brother\CMSBundle\Admin\Entity;
 
-use Brother\CommonBundle\AppDebug;
+use Brother\CMSBundle\AppDebug;
 use Brother\CommonBundle\Route\AppRouteAction;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\MediaBundle\Admin\ORM\MediaAdmin as Admin;

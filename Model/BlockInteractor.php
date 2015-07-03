@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Brother\CommonBundle\Site;
+namespace Brother\CMSBundle\Model;
 
 use Symfony\Bridge\Doctrine\RegistryInterface;
 

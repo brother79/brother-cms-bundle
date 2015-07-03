@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Brother\CommonBundle\Admin;
+namespace Brother\CMSBundle\Admin;
 
 use Sonata\MediaBundle\Admin\GalleryAdmin as Admin;
 use Sonata\AdminBundle\Form\FormMapper;

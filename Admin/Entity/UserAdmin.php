@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Brother\CommonBundle\Admin\Entity;
+namespace Brother\CMSBundle\Admin\Entity;
 
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\UserBundle\Admin\Model\UserAdmin as BaseUserAdmin;

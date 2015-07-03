@@ -1,5 +1,5 @@
 <?php
-namespace Brother\CommonBundle\Command;
+namespace Brother\CMSBundle\Command;
 
 use Brother\CommonBundle\AppDebug;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;

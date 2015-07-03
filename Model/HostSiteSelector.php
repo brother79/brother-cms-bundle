@@ -6,10 +6,9 @@
  * Time: 13:40
  */
 
-namespace Brother\CommonBundle\Site;
+namespace Brother\CMSBundle\Model;
 
 use Brother\CommonBundle\AppDebug;
-use Brother\CommonBundle\AppTools;
 use Sonata\PageBundle\Site\HostSiteSelector as BaseHostSiteSelector;
 use Symfony\Component\HttpFoundation\Request;
 
