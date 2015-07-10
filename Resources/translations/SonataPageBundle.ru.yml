@@ -1,6 +1,8 @@
 Breadcrumb (Homepage):                 Хлебные крошки
 Categories Menu:                       Меню категорий
 Children Page (core):                  Дочерняя страница
+composer.disable:                      Отключить
+composer.enable:                       Включить
 Edited Pages:                          Редактированные страницы
 Email - Share button:                  Кнопка - отправить письмо
 form.label_published:                  Опубликовано
@@ -31,6 +33,7 @@ Recent Posts:                          Последние статьи
 Recent products:                       Последние товары
 Rich Text Area:                        Форматированный текст
 Rss Reader:                            Rss блок
+SEO:                                   СЕО
 Similar products:                      Подобные товары
 sonata.page.block.breadcrumb:          Хлебные крошки
 Template:                              Шаблон

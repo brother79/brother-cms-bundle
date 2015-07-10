@@ -7,10 +7,14 @@ _page_internal_error_not_found:            Страица не найдена
 Комментарии:                               Комментарии
 Основные:                                  Основные
 admin:                                     Администратор
+brother_guestbook_add:                         Гостевая книга - добавить
+brother_guestbook_new:                         Гостивая книга - новый
+Cache policy:                              Способ кэширования
 cancelled:                                 Отменён
 Car:                                       Авто
 Children class:                            Клас дочернего меню
 Class:                                     Класс
+cms:                                       ЦМС
 Color:                                     Цвет
 Colorscheme:                               Цветовая схема
 Content:                                   Контент
@@ -19,18 +23,21 @@ Created at:                                Дата создания
 Created At:                                Дата создания
 Current class:                             Класс Текущего
 Current:                                   Текущий
-done:                                      Сделано
 dark:                                      Тёмная
-Default:                                   По умолчанию
 default:                                   По умолчанию
-default_small:                             Маленькие
+Default:                                   По умолчанию
 default_big:                               Большие
-error:                                     Ошибка
+default_small:                             Маленькие
+done:                                      Сделано
 Email - Share button - sonata.seo.block.email.share_button: Кнопка - отправить письмо
 Engine:                                    Двигатель
+error:                                     Ошибка
 Feature Media - sonata.media.block.feature_media: Медиа объект настраиваемый
 feature_left_choice:                       По левому краю
 feature_right_choice:                      По правому краю
+filter.label_enabled:                      Включено
+filter.label_name:                         Название
+filter.label_type:                         Тип
 First class:                               Класс первого
 Format:                                    Формат
 fos_comment_edit_thread_comment:           Комментарий - редактировать
@@ -51,7 +58,7 @@ fos_comment_post_threads:                  Комментарий - опубли
 fos_comment_put_thread_comments:           Комментарий - опубликовать коммент
 fos_comment_remove_thread_comment:         Комментарий - удалить коммент
 fos_user_change_password:                  Изменение пароля
-fos_user_profile_edit:                     Провиль - редактировать
+fos_user_profile_edit:                     Профиль - редактировать
 fos_user_profile_edit_authentication:      Профиль - аутентифиация
 fos_user_profile_show:                     Профиль - просмотр
 fos_user_registration_check_email:         Регистрация - проверка email
@@ -67,13 +74,14 @@ fos_user_security_login:                   Логин
 fos_user_security_logout:                  Выход
 Gallery - sonata.media.block.gallery:      Галерея
 Height:                                    Высота
-Homepage:                                  Главная страница
 homepage:                                  Главная страница
-invalid:                                   Блокирован
+Homepage:                                  Главная страница
 in_progress:                               В процессе
 Internal Page:                             Внутренняя страница
+invalid:                                   Блокирован
 Last class:                                Класс последнего
 light:                                     Светлая
+Main content:                              Основной контент
 Main Menu:                                 Главное меню
 markdown:                                  Маркированный текст
 Material:                                  Материал
@@ -83,24 +91,27 @@ Menu name:                                 Название меню
 Menu template:                             Шаблон
 moderate:                                  Требуется модерация
 news:                                      Новость
-Orientation:                               Ориентация
 open:                                      Открыт
+Orientation:                               Ориентация
 Page id:                                   Страница
 Pause time:                                Время паузы
 PrestaSitemapBundle_index:                 Карта сайта
 PrestaSitemapBundle_section:               Карта сайта - раздел
+price:                                     Прайс
 product_catalog:                           Каталог товаров
 profile:                                   Профиль
-price:                                     Прайс
 rawhtml:                                   Исходный код
 Rich Text Area - sonata.formatter.block.formatter: Форматированный текст
 richhtml:                                  Форматированный текст
-brother_guestbook_add:                         Гостевая книга - добавить
-brother_guestbook_new:                         Гостивая книга - новый
 Show border:                               Показать рамку
 Show faces:                                Показать лицо
 Show header:                               Показать заголовок
 Show posts:                                Показать сообщения
+sonata.media.provider.dailymotion:         Dailymotion
+sonata.media.provider.file:                Файл
+sonata.media.provider.image:               Картинка
+sonata.media.provider.vimeo:               Vimeo
+sonata.media.provider.youtube:             Youtube
 sonata_basket_add_product:                 Корзина - добавить товар
 sonata_basket_authentication:              Корзина - аутентификация
 sonata_basket_delivery:                    Корзина - доставка
@@ -158,11 +169,6 @@ sonata_product_price_stock:                Товары - цены в налич
 sonata_product_variation_product:          Товары - разновидности
 sonata_product_view:                       Товары - просмотр
 sonata_product_view_variations:            Товары - посмотреть разновидности
-sonata.media.provider.vimeo:               Vimeo
-sonata.media.provider.file:                Файл
-sonata.media.provider.image:               Картинка
-sonata.media.provider.youtube:             Youtube
-sonata.media.provider.dailymotion:         Dailymotion
 sonata_qa_serialize:                       qa
 sonata_user_change_password:               Изменение пароля
 sonata_user_profile_edit:                  Профиль - редактировать
@@ -190,10 +196,10 @@ This is the recent posts block.:           Блок последних сооб�
 This is the recent posts comments block.:  Блок последних комментариев
 This is the timeline block.:               Timeline блок
 Title:                                     Заголовок
-Url:                                       Ссылка
 Updated At:                                Дата модификации
-user_type:                                 Пользовательские
+Url:                                       Ссылка
 user:                                      Пользователь
+user_type:                                 Пользовательские
 valid:                                     Одобрен
 Width:                                     Ширина
 Wrap:                                      Вписать
@@ -201,7 +207,6 @@ Wrap:                                      Вписать
 содержит:                                  содержит
 не равен:                                  не равен
 не содержит:                               не содержит
-
 
 'ROLE_ADMIN: ROLE_USER':                   
 ROLE_ALLOWED_TO_SWITCH:
