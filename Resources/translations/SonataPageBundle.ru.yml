@@ -6,6 +6,7 @@ composer.enable:                       Включить
 Edited Pages:                          Редактированные страницы
 Email - Share button:                  Кнопка - отправить письмо
 form.label_published:                  Опубликовано
+filter.label_published:                Опубликовано
 Facebook Social Plugin - Like box:     Фэйсбук - блок лайкнуть
 Facebook Social Plugin - Like button:  Фэйсбук - кнопка лайкнуть
 Facebook Social Plugin - Send button:  Фэйсбук - кнопка отправить
