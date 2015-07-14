@@ -11,6 +11,7 @@
 
 namespace Brother\CMSBundle\Admin;
 
+use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\MediaBundle\Admin\GalleryAdmin as Admin;
 use Sonata\AdminBundle\Form\FormMapper;
 
@@ -37,5 +38,12 @@ class GalleryAdmin extends Admin
         parent::configureFormFields($formMapper);
         $this->fixTrans = false;
     }
+
+    protected function configureListFields(ListMapper $listMapper)
+    {
+        parent::configureListFields($listMapper);
+        $listMapper->add('images4', null, array('template' => 'BrotherCMSBundle:Gallery:list_field_images.html.twig'));
+    }
+
 
 }

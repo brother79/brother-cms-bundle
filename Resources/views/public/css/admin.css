@@ -1,0 +1,7 @@
+ul.gallery-preview li {
+    list-style: none;
+    float:left;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}

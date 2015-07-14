@@ -1,0 +1,12 @@
+{% extends 'SonataAdminBundle:CRUD:base_list_field.html.twig' %}
+{% block field %}
+    {% spaceless %}
+        <ul class="gallery-preview">
+        {% for media in value %}
+            <li>
+                {% media media, 'small' %}
+            </li>
+        {% endfor %}
+        </ul>
+    {% endspaceless %}
+{% endblock %}
