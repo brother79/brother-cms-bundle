@@ -1,6 +1,6 @@
 {% for page in pages %}
     <li class="{{ page.menuClass }}">
-        <a href="{{ path(page) }}">{{ page.menuTitle }}</a>
+        <a href="{{ path(page) }}">{{ page.menuTitle ? page.menuTitle : page.name }}</a>
         {% if page.hasChildren %}
             {% if depth is defined and depth>1 %}
                 <ul>
