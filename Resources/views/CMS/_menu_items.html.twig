@@ -2,9 +2,15 @@
     <li class="{{ page.menuClass }}">
         <a href="{{ path(page) }}">{{ page.menuTitle }}</a>
         {% if page.hasChildren %}
-            <ul>
-                {% include "BrotherCMSBundle:CMS:_menu_items.html.twig" with { pages: page.children } %}
-            </ul>
+            {% if depth is defined and depth>1 %}
+                <ul>
+                    {% include "BrotherCMSBundle:CMS:_menu_items.html.twig" with { pages: page.children, depth: depth-1 } %}
+                </ul>
+            {% elseif not depth is defined %}
+                <ul>
+                    {% include "BrotherCMSBundle:CMS:_menu_items.html.twig" with { pages: page.children } %}
+                </ul>
+            {% endif %}
         {% endif %}
     </li>
 {% endfor %}
