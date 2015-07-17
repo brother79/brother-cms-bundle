@@ -14,6 +14,7 @@ use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\BlockBundle\Block\BlockContextInterface;
 use Sonata\BlockBundle\Model\BlockInterface;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 class HeaderFormatterBlock extends FormatterBlockService
@@ -45,6 +46,11 @@ class HeaderFormatterBlock extends FormatterBlockService
 
     public function setDefaultSettings(OptionsResolverInterface $resolver)
     {
+        $this->configureSettings($resolver);
+    }
+
+    public function configureSettings(OptionsResolver $resolver)
+    {
         $resolver->setDefaults(array(
             'title'      => '<b>Введите заголовок блока</b>',
             'format'     => 'richhtml',
@@ -53,4 +59,6 @@ class HeaderFormatterBlock extends FormatterBlockService
             'template'   => 'MainBundle:Block:block_formatter.html.twig'
         ));
     }
+
+
 } 
