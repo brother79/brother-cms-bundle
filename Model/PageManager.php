@@ -89,7 +89,7 @@ class PageManager extends BasePageManager
         if ($this->pages == null) {
             $this->pages = $this->getEntityManager()
                 ->createQuery(sprintf('SELECT p FROM %s p INDEX BY p.id WHERE p.site = %d and p.published=1 ORDER BY p.position ASC', $this->class, $site->getId()))
-                ->useResultCache(true, 3600)
+                ->useResultCache(true, 300)
                 ->execute();
             /* @var $Pages PageInterface[] */
             foreach ($this->pages as $page) {
