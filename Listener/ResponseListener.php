@@ -22,7 +22,6 @@ use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
  */
 class ResponseListener extends BaseResponseListener
 {
-
     public function onCoreResponse(FilterResponseEvent $event)
     {
         $response = $event->getResponse();
