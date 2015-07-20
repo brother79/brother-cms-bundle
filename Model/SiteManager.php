@@ -15,7 +15,7 @@ class SiteManager extends BaseSiteManager {
 
     public function findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
     {
-        if ($criteria == array('enabled' => 1)) {
+        if ($criteria == array('enabled' => true)) {
             $repository = $this->getRepository();
             /* @var $repository \Doctrine\ORM\EntityRepository */
 
