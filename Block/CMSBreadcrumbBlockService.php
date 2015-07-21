@@ -42,16 +42,18 @@ class CMSBreadcrumbBlockService extends BaseBreadcrumbMenuBlockService
         /* @var $menu \Knp\Menu\MenuItem */
         $curPage = AppRouteAction::getCmsManager()->getCurrentPage();
         /* @var $curPage BasePage */
-        foreach ($curPage->getParents() as $page) {
-            /* @var $page BasePage */
-            if ($page->getUrl() !== '/') {
-                $menu->addChild(AppRouteAction::translate($page->getName()), array(
-                    'route' => $page,
+        if ($curPage) {
+            foreach ($curPage->getParents() as $page) {
+                /* @var $page BasePage */
+                if ($page->getUrl() !== '/') {
+                    $menu->addChild(AppRouteAction::translate($page->getName()), array(
+                        'route' => $page,
 //                    'extras' => array('translation_domain' => 'SonataMediaBundle'),
-                ));
+                    ));
+                }
             }
+            $menu->addChild(AppRouteAction::translate($curPage->getName()), array());
         }
-        $menu->addChild(AppRouteAction::translate($curPage->getName()), array());
         return $menu;
     }
 }
