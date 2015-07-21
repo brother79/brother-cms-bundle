@@ -45,13 +45,13 @@ class CMSBreadcrumbBlockService extends BaseBreadcrumbMenuBlockService
         foreach ($curPage->getParents() as $page) {
             /* @var $page BasePage */
             if ($page->getUrl() !== '/') {
-                $menu->addChild($page->getName(), array(
+                $menu->addChild(AppRouteAction::translate($page->getName()), array(
                     'route' => $page,
 //                    'extras' => array('translation_domain' => 'SonataMediaBundle'),
                 ));
             }
         }
-        $menu->addChild($curPage->getName(), array());
+        $menu->addChild(AppRouteAction::translate($curPage->getName()), array());
         return $menu;
     }
 }
