@@ -42,7 +42,7 @@ class CMSBreadcrumbBlockService extends BaseBreadcrumbMenuBlockService
         /* @var $menu \Knp\Menu\MenuItem */
         $curPage = AppRouteAction::getCmsManager()->getCurrentPage();
         /* @var $curPage BasePage */
-        if ($curPage) {
+        if ($curPage && $curPage->getRouteName() != 'homepage') {
             foreach ($curPage->getParents() as $page) {
                 /* @var $page BasePage */
                 if ($page->getUrl() !== '/') {
