@@ -35,9 +35,11 @@ class SnapshotManager extends BaseSnapshotManager
     public function findEnableSnapshot(array $criteria)
     {
         $date = new \Datetime;
+        $date1 = new \Datetime;
+        $date1->setTime(0, 0, 0);
         $parameters = array(
-            'publicationDateStart' => $date,
-            'publicationDateEnd'   => $date,
+            'publicationDateStart' => $date1,
+            'publicationDateEnd'   => $date1,
         );
 
         $query = $this->getRepository()
@@ -69,9 +71,13 @@ class SnapshotManager extends BaseSnapshotManager
         }
 
         $query->setMaxResults(1);
-        $query->setParameters($parameters);
-
-        return $query->getQuery()->useResultCache(true, 300)->getOneOrNullResult();
+        $result = $query->setParameters($parameters)->getQuery()->useResultCache(true, 300)->getOneOrNullResult();
+        if ($result == null) {
+            $parameters['publicationDateStart'] = $date;
+            $parameters['publicationDateEnd'] = $date;
+            $result = $query->setParameters($parameters)->getQuery()->getOneOrNullResult();
+        }
+        return $result;
     }
 
     /**
