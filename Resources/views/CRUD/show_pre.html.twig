@@ -1,5 +1,6 @@
 {% extends 'SonataAdminBundle:CRUD:base_show_field.html.twig' %}
 
 {% block field%}
+    {{ value|json_encode() }}
     {{ dump(value) }}
 {% endblock %}
