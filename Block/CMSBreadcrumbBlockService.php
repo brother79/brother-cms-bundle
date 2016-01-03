@@ -3,7 +3,6 @@
 namespace Brother\CMSBundle\Block;
 
 use Brother\CMSBundle\Model\BasePage;
-use Brother\CommonBundle\AppDebug;
 use Brother\CommonBundle\Route\AppRouteAction;
 use Sonata\BlockBundle\Block\BlockContextInterface;
 use Sonata\SeoBundle\Block\Breadcrumb\BaseBreadcrumbMenuBlockService;

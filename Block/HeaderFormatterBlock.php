@@ -9,7 +9,6 @@
 namespace Brother\CMSBundle\Block;
 
 
-use Brother\CommonBundle\AppDebug;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\BlockBundle\Block\BlockContextInterface;
 use Sonata\BlockBundle\Model\BlockInterface;

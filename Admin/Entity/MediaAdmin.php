@@ -11,7 +11,6 @@
 
 namespace Brother\CMSBundle\Admin\Entity;
 
-use Brother\CMSBundle\AppDebug;
 use Brother\CommonBundle\Route\AppRouteAction;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\MediaBundle\Admin\ORM\MediaAdmin as Admin;

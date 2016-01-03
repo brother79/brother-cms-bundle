@@ -2,10 +2,7 @@
 
 namespace Brother\CMSBundle\Controller;
 
-use Brother\CommonBundle\AppDebug;
 use Sonata\PageBundle\Controller\PageController;
-use Sonata\PageBundle\Entity\PageManager;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class CMSController extends PageController
 {

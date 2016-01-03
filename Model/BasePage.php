@@ -8,7 +8,6 @@
 
 namespace Brother\CMSBundle\Model;
 
-use Brother\CommonBundle\AppDebug;
 use Brother\CommonBundle\Route\AppRouteAction;
 use Sonata\PageBundle\Entity\BasePage as SonataBasePage;
 

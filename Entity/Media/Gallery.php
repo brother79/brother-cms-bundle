@@ -10,7 +10,6 @@
 
 namespace Brother\CMSBundle\Entity\Media;
 
-use Brother\CommonBundle\AppDebug;
 use Sonata\MediaBundle\Entity\BaseGallery as BaseGallery;
 
 /**

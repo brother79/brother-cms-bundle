@@ -9,7 +9,6 @@
 namespace Brother\CMSBundle\Model;
 
 use Brother\CommonBundle\AppDebug;
-use Brother\CommonBundle\AppTools;
 use Sonata\PageBundle\Site\HostPathSiteSelector as BaseHostPathSiteSelector;
 use Symfony\Component\HttpFoundation\Request;
 
