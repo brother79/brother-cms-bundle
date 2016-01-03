@@ -12,7 +12,6 @@
 namespace Brother\CMSBundle\Admin;
 
 use Brother\CMSBundle\Model\BasePage;
-use Brother\CommonBundle\AppDebug;
 use Brother\CommonBundle\AppTools;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
