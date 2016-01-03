@@ -8,7 +8,6 @@
 
 namespace Brother\CMSBundle\Model;
 
-use Brother\CommonBundle\AppDebug;
 use Sonata\PageBundle\Entity\SiteManager as BaseSiteManager;
 
 class SiteManager extends BaseSiteManager {
