@@ -40,6 +40,9 @@ class DateTimeExtension extends BaseDateTimeExtension {
      */
     public function formatTimeDiff($time, $pattern = null, $locale = null, $timezone = null, $dateType = null, $timeType = null) {
         $now = new \DateTime();
+        if ($time == null) {
+            $time = $now;
+        }
         if ($now->getTimestamp() - $time->getTimestamp() < 86400) {
             $interval = $now->diff($time);
             $h = $interval->format('%h');
