@@ -1,0 +1,3 @@
+admin_sonata_page_page_create:
+    path:     /admin/app/page-page/create1
+    defaults: { _controller: SonataPageBundle:PageAdmin:create }
