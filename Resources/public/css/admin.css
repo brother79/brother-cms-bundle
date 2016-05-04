@@ -9,3 +9,6 @@ ul.gallery-preview li {
     height: 60px;
     overflow: hidden;
 }
+.label-important {
+    background-color: #00a65a !important;
+}
