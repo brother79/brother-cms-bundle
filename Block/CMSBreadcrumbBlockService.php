@@ -22,6 +22,7 @@ class CMSBreadcrumbBlockService extends BaseBreadcrumbMenuBlockService
      */
     protected function getRootMenu(BlockContextInterface $blockContext)
     {
+        $blockContext->setSetting('include_homepage_link', false);
         $menu = parent::getRootMenu($blockContext);
 
 //        $menu->addChild('sonata_media_gallery_index', array(
