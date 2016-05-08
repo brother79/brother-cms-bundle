@@ -37,6 +37,7 @@ class CMSBreadcrumbBlockService extends BaseBreadcrumbMenuBlockService
      */
     protected function getMenu(BlockContextInterface $blockContext)
     {
+        $blockContext->setSetting('include_homepage_link', false);
         $menu = $this->getRootMenu($blockContext);
         /* @var $menu \Knp\Menu\MenuItem */
         $curPage = AppRouteAction::getCmsManager()->getCurrentPage();
