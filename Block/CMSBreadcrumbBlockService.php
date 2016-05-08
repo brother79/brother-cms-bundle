@@ -22,7 +22,7 @@ class CMSBreadcrumbBlockService extends BaseBreadcrumbMenuBlockService
      */
     protected function getRootMenu(BlockContextInterface $blockContext)
     {
-        $blockContext->setSetting('include_homepage_link', false);
+//        $blockContext->setSetting('include_homepage_link', false);
         $menu = parent::getRootMenu($blockContext);
 
 //        $menu->addChild('sonata_media_gallery_index', array(
@@ -38,7 +38,7 @@ class CMSBreadcrumbBlockService extends BaseBreadcrumbMenuBlockService
      */
     protected function getMenu(BlockContextInterface $blockContext)
     {
-        $blockContext->setSetting('include_homepage_link', false);
+//        $blockContext->setSetting('include_homepage_link', false);
         $menu = $this->getRootMenu($blockContext);
         /* @var $menu \Knp\Menu\MenuItem */
         $curPage = AppRouteAction::getCmsManager()->getCurrentPage();
