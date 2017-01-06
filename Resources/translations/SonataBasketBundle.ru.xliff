@@ -333,7 +333,7 @@
             </trans-unit>
             <trans-unit id="basket_stepper_billing_title">
                 <source>basket_stepper_billing_title</source>
-                <target>Виллинг</target>
+                <target>Биллинг</target>
             </trans-unit>
             <trans-unit id="basket_stepper_checkout_title">
                 <source>basket_stepper_checkout_title</source>
