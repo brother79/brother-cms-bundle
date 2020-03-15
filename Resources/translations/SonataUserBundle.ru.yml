@@ -1,0 +1,12 @@
+User:   Пользователь
+Roles:  Роли
+Status: Статус
+Other:  Другие
+Profession: Профессия
+form:
+    label_image: Картинка
+    label_profession: Профессия
+    label_patronymic: Отчество
+show:
+    label_profession: Профессия
+    label_patronymic: Отчество
